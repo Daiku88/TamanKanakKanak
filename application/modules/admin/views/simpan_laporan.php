@@ -1,0 +1,13 @@
+SELECT DISTINCT id as kid,no_kk AS no_kk,kepala_kk,
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='1') AS '1', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='2') AS '2', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='3') AS '3', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='4') AS '4', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='5') AS '5', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='6') AS '6', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='7') AS '7', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='8') AS '8', 
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='9') AS '9',
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='10') AS '10',
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='11') AS '11',
+(SELECT jumlah FROM pemasukkan WHERE penduduk_id=kid AND jns_id='2' AND MONTH(tgl)='12') AS '12' FROM kk

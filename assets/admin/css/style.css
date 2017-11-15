@@ -1,0 +1,150 @@
+.wordwrap {    
+   word-wrap: break-word;      /* IE */
+}
+
+p {
+    font-stretch: ultra-condensed;
+}
+
+.h-scroll {
+    height: 90vh; /* %-height of the viewport */
+    position: fixed;
+    overflow-y: scroll;
+}
+
+
+.box1 {
+  cursor: pointer;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.box1 img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.box1 .overbox {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 240px;
+  padding: 80px 20px;
+}
+
+.box1:hover .overbox { opacity: 1; }
+.box1 .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.box1 .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.box1:hover .title,
+.box1:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.box1 .tagline {
+  font-size: 0.8em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.box1:hover .tagline,
+.box1:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+.borderless td, .borderless th {
+    border: none;
+}
+
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.shadow1 {
+  margin: 40px;
+  background-color: rgb(68,68,68); /* Needed for IEs */
+
+  -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+}
+.shadow1 .content {
+  position: relative; /* This protects the inner element from being blurred */
+  padding: 100px;
+  background-color: #DDD;
+}
+.ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*AGENDA*/
+.agenda .media-object {
+  width: 70px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #bbb;
+  color: #09c;
+  padding: 0 0 10px;
+  margin-bottom: -1px;
+}
+.agenda .title,
+.box .detail .agenda .title {
+  background: #09c;
+  color: #fff;
+  margin: 0 0 10px !important;
+  height: auto;
+  padding: 5px 0;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: none;
+}
+.agenda a,
+.detail .agenda .media-body span {
+  color: #09c;
+}
+.agenda a:hover {
+  color: #C60;
+}

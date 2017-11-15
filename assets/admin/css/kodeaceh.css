@@ -1,0 +1,138 @@
+body {
+    background: url(../images/backgrounds/bodyBg.png) repeat #fff;
+    font-size: 12px;
+}
+
+#content{
+	background: none;
+}
+img.logo {
+    width: 30px;
+}
+
+#header h1 a {
+    display: block;
+    color: #FFF;
+    font-size: 20px;
+}
+
+#header {
+    background-color: #ffc107;
+    margin-top: 10px;
+}
+
+#user-nav > ul > li {
+    background: transparent;
+    border-left: 1px solid #151f80;
+}
+
+#sidebar {
+    background: #1f1f1f;
+}
+
+#sidebar > ul > li {
+    border-right: 1px solid #353535;
+}
+
+#sidebar > ul li ul {
+    background: #1f1f1f;
+}
+
+#sidebar > ul li ul li a {
+    white-space: nowrap;
+}
+
+#sidebar > ul li ul li:hover a {
+    background-color: #1d278c;
+}
+
+#sidebar > ul > li:hover {
+    background-color: #1d278c;
+}
+
+#footer{
+	display: none;
+}
+
+.widget-box-header {
+    margin-top: -21px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+#search button {
+    margin-top: -12px;
+    padding: 8px 10px 9px;
+    background-color: #e29301;
+}
+
+table tr th, .table th{
+    text-align:left;
+}
+
+
+/*table tr td:first-child, table tr th:first-child{
+    text-align: right;
+}*/
+
+label, input, button, select, textarea {
+    font-size: 12px;
+}
+
+.sweet-alert button {
+    font-size: 13px;
+}
+
+.sweet-alert p {
+    font-size: 14px;
+}
+
+.sweet-alert h2 {
+    font-size: 26px;
+    margin: 25px 0 0px;
+    line-height: 34px;
+}
+
+a.btn.btn-mini.btn-success.btn-tambah {
+    margin: -5px;
+}
+
+.alert {
+    margin-bottom: 1px;
+}
+
+.textaja {
+    padding: 5px 0;
+}
+
+.btn {
+    font-size: 12px;
+}
+
+.dataTables_paginate span .ui-state-disabled, .pagination.alternate li.active a {
+    background: #1f6ecb !important;
+    color: #ffffff !important;
+    cursor: default !important;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    font-size: 12px;
+}
+
+.dataTables_filter input {
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding: 0px 6px 1px;
+}
+
+.dataTables_length select {
+    padding: 2px 5px;
+    margin: 0;
+    height: 24px;
+    width: 60px;
+}
+
+.btn-export {
+    margin: -5px 0 -5px 0;
+}
